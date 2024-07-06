@@ -9,6 +9,17 @@ import Cartlist from "../Components/Cartlist";
 import Menus from "../Components/Menus";
 import FooterMenu from "../Components/FooterMenu";
 
+import logo from "../images/flipkartoriginal.png";
+import grocery from "../images/grocery.webp";
+import mobiles from "../images/mobiles.avif"
+import fasions from "../images/fasion.webp"
+import electronics from "../images/electronics.webp"
+import toys from "../images/toys.jpeg"
+import vehicles from "../images/twowheelers.jpg"
+import furnitures from "../images/homeandfurnitures.webp"
+
+
+
 function App() {
   const [cartcount, setCartcount] = useState(0);
   const [products, setProducts] = useState([]);
@@ -108,7 +119,7 @@ function App() {
       <form onSubmit={searchhandler}>
 
       <div id="navigation" >
-        <img src="../images/flipkartoriginal.png" id="logo" />
+        <img src={logo} id="logo" />
 
         <input
           type="text"
@@ -206,34 +217,34 @@ function App() {
             
           
           }}>
-            <img id="grocery" src="../images/grocery.webp" alt="grocery" />
+            <img id="grocery" src={grocery} alt="grocery" />
             <p>Grocery</p>
           </div>
           <div onClick={() => {
             setRecategory1({ category1: 'electronics' });
 
           }}>
-            <img src="../images/mobiles.avif" id="Mobiles" />
+            <img src={mobiles} id="Mobiles" />
             <p>Mobiles</p>
           </div>
           <div onClick={() => {
             setRecategory1({ category1: 'Fasion' });
           }}>
-            <img src="../images/fasion.webp" id="fasion" />
+            <img src={fasions} id="fasion" />
             <p>Fasions</p>
           </div>
           <div onClick={() => {
             setRecategory1({ category1: 'electronics' });
           }}>
-            <img src="../images/electronics.webp" id="electronics" />
+            <img src={electronics} id="electronics" />
             <p>Electronics</p>
           </div>
           <div onClick={()=>{setRecategory1({category1:'Toys'})}}>
-            <img src="../images/toys.jpeg" id="toys" />
+            <img src={toys} id="toys" />
             <p>Beauty,Toys and More</p>
           </div>
           <div onClick={()=>{setRecategory1({category1:'Vehicles'})}}>
-            <img src="../images/twowheelers.jpg" id="bikes" />
+            <img src={vehicles} id="bikes" />
             <p>Two wheelers</p>
           </div>
           <div
@@ -241,7 +252,7 @@ function App() {
               setRecategory1({category1:'Furnitures'})
             }}
           >
-            <img src="../images/homeandfurnitures.webp" id="furnitures" />
+            <img src={furnitures} id="furnitures" />
             <p>Home and furnitures</p>
           </div>
         </div>

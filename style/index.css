@@ -73,7 +73,7 @@
   overflow: hidden;
   border-radius: 3px;
   width:150px;
-  height:218px;
+  height:270px;
   background-color: rgb(252, 254, 254);
   position: absolute;
   margin:-580px 0px 0px 230px;
@@ -364,12 +364,17 @@ p{
 #cartbuybut{
   background-color:rgb(208, 137, 22);
 }
+#loadingstatus{
+    margin:50px 0px 40px 800px;
+    font-size: 15px;
+    color:rgb(163, 163, 162);
+}
 #footcontainer{
   display: none;
   background-color:rgb(208, 137, 22);
-  width: 100vw;
-  z-index:2 ;
-  margin:-8px 0px 0px 0px;
+  /* width: 100vw; */
+  z-index:3 ;
+  margin:px 0px 0px 0px;
   position: fixed;
   height: 60px;
   border-top: 1px solid black;
@@ -381,7 +386,7 @@ p{
   
 }
 #footer div{
-  margin:0px 20px 0px 20px;
+  margin:0px 10px 0px 20px;
   padding: 5px 10px 5px 5px; 
   /* width:70px; */
   height: 60px;
@@ -389,7 +394,7 @@ p{
 }
 
 
-@media(min-width:380px) and (max-width:600px)
+@media(min-width:350px) and (max-width:600px)
 {
  #logo{
   margin:20px 0px 0px 20px;
@@ -401,7 +406,7 @@ p{
   width:230px;
  }
  #menubox{
-  margin:-560px 10px 0px 280px ;
+  margin:-560px 10px 0px 265px ;
  }
  
  #menus{
@@ -409,7 +414,7 @@ p{
  }
  #menulines{
   display: block;
-  margin-left:380px;
+  margin-left:365px;
  }
  #innerhead{
   margin-left:-20px;
@@ -424,22 +429,42 @@ p{
  }
  #slideimg
  {
-  width:70%;
+  width:72%;
   margin-left:10px;
  }
  #lftarrow{
   margin-left:30px;
  }
-
+#loadingstatus{
+  margin-left:80px;
+}
  #footcontainer{
    display: block;
  }
+}
+
+@media (min-width:412px) and (max-width:500px)
+{
+  #footcontainer{
+    margin-top: -5px;
+  }
 }
 
 @media (min-width:500px) and (max-width:600px)
 {
   #menulines{
     margin-left: 380px;
+  }
+   #footcontainer{
+    margin-top: -8px;
+    /* width:100vw; */
+  }
+  #loadingstatus{
+    margin-left:200px;
+  }
+  #footer div{
+    margin:0px 30px 0px 30px;
+  padding: 5px 10px 5px 5px; 
   }
 }
 
@@ -484,6 +509,14 @@ p{
  #lftarrow{
   margin-left:30px;
  }
+ 
+ #footcontainer{
+  margin-top:-6px;
+  display: block;
+ }
+ #footer div{
+   margin:0px 60px 0px 35px;
+ }
 }
 
 @media (min-width:700px) and (max-width:850px)
@@ -496,6 +529,9 @@ p{
  #searchbar{
   margin-left:40px;
   width:200px;
+ }
+ #loadingstatus{
+  margin-left:300px;
  }
  #cartbox{
   margin: -545px 0px 0px 240px;
@@ -605,6 +641,9 @@ p{
  {
   width:80%;
   margin-left:10px;
+ }
+ #loadingstatus{
+  margin-left:450px;
  }
  #lftarrow{
   margin-left:30px;

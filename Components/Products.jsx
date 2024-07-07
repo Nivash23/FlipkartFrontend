@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from "react";
 import "../style/Card.css";
 
-function Products({ products, setProducts, setCartcount, cartcount,cartlist,setCartlist,totalprice,setTotalprice }) {
+function Products({ products, setProducts, setCartcount, cartcount, cartlist, setCartlist, totalprice, setTotalprice }) {
+  const [loadingstatus, setLoadingstatus] = useState();
   const handleProducts = async () => {
+    setLoadingstatus('Fetching Please wait ...')
     const response = await fetch("https://flipkartbackend-re50.onrender.com/api/getProducts/");
 
     const data = await response.json();
 
     if (response.status == 200) {
+      setLoadingstatus('');
       setProducts(data);
+
     }
   };
   useEffect(() => {
@@ -17,6 +21,7 @@ function Products({ products, setProducts, setCartcount, cartcount,cartlist,setC
   
   return (
     <div>
+      <div id="loadingstatus">{loadingstatus }</div>
       <div class="row">
         {products.map((item, i) => (
           <div class="col-md-3">

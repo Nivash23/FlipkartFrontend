@@ -23,6 +23,10 @@ function Menus({menupage,setMenupage}) {
       </div>
         <hr></hr> 
       <div class="row">
+        <div>Gift Cards</div>
+      </div>
+        <hr></hr> 
+      <div class="row">
         <div>Help</div>
       </div>
         <hr></hr> 

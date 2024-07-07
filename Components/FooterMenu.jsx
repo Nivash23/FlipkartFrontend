@@ -7,7 +7,7 @@ function FooterMenu() {
               
              <div>Orders</div>
              <div>Wishlist</div>
-             <div>Gift Cards</div>
+             <div>Cart</div>
              <div>Login</div>
           </div>
     </div>
